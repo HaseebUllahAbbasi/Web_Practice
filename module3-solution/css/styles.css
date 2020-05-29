@@ -1,0 +1,103 @@
+#header-nav
+{
+	background-color: silver;
+
+}
+.heading_section
+{
+	text-align: center;
+}
+@media (min-width:992px)
+{
+
+	.text_style
+	{
+			padding: 20px; margin: 20px; margin-top: 10px;
+	}
+
+	.article_heading
+	{
+		text-align: center; padding-top: 20px;
+		font-size: 25px;
+		font-weight: bold;
+	}
+#heading_Food
+{
+	margin-left:-200px;
+
+}
+
+article
+{
+	background-color: silver; margin-left: 40px; margin-right: 40px; margin-top: 30px;
+
+}
+.navbar-header
+{
+	background-color: silver;
+}
+
+}
+@media (max-width:767px)
+{
+	.nav-bar-items
+	{
+		text-align: center;
+		background-color: white;
+		padding: 10px;
+		margin: 10px;
+	}
+		.text_style
+		{
+				padding: 20px; margin: 20px; margin-top: 10px;
+		}
+	#heading_Food
+{
+	margin-left: 30px;
+}
+article
+{
+	background-color: silver; margin-left: 40px; margin-right: 40px; margin-top: 30px;
+
+}
+.article_heading
+{
+	text-align: center; padding-top: 20px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.navbar-header
+{
+	background-color: silver;
+	font-weight: bolder;
+}
+
+
+
+}
+@media (min-width:768px) and (max-width:991px)
+{
+
+	.article_heading
+	{
+		text-align: center; padding-top: 20px;
+		font-size: 25px;
+		font-weight:bolder;
+	}
+
+	.text_style
+	{
+			padding: 20px; margin: 20px; margin-top: 10px;
+	}
+article
+{
+	background-color: silver; margin-left: 40px; margin-right: 40px; margin-top: 30px;
+
+}
+.navbar-header
+{
+	background-color: silver;
+}
+
+}
