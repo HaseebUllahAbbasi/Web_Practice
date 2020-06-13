@@ -1,0 +1,120 @@
+<div class="container">
+<h3>Sign up to get our newsletter weekly</h3>
+
+<br>
+<br>
+<form name="signup" ng-controller="SignupController as ctrl" novalidate>
+
+  <div>
+    <span class="col-md-6 col-xs-12">First Name:  </span>
+    <span class="col-md-6 col-xs-12">
+      <input type="text" name="firstname" placeholder="Your First Name"
+      ng-model="ctrl.firstname"
+      required
+      maxlength="10"
+      >
+      <span ng-if="signup.firstname.$error.required
+          && signup.firstname.$touched">First Name is required</span>
+    </span>
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    <span class="col-md-6 col-xs-12">Last Name:  </span>
+    <span class="col-md-6 col-xs-12">
+      <input type="text" name="lastname" placeholder="Your Last Name"
+      ng-model="ctrl.lastname"
+      required
+      maxlength="10"
+      >
+      <span ng-if="signup.lastname.$error.required
+          && signup.lastname.$touched">Last Name is required</span>
+    </span>
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    <span class="col-md-6 col-xs-12">Email Address:  </span>
+    <span class="col-md-6 col-xs-12">
+      <input type="email" name="email" placeholder="Your Email Address"
+      required
+      ng-model="ctrl.email"
+      >
+      <span ng-if="signup.email.$error.required
+          && signup.email.$touched">Email is required </span>
+      <span ng-if="signup.email.$touched
+              && !(signup.email.$error.required)
+              && signup.email.$invalid">Should look like handle@haha </span>
+    </span>
+
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    <span class="col-md-6 col-xs-12">Phone Number:  </span>
+    <span class="col-md-6 col-xs-12">
+      <input type="text" name="phoneNumber" placeholder="Your Phone Number"
+      ng-model="ctrl.phoneNumber"
+      required
+      pattern="(\d{3})-(\d{3})-(\d{4})"
+      >
+      <span ng-if="signup.phoneNumber.$error.required
+          && signup.phoneNumber.$touched">Phone Number is required</span>
+          <span ng-if="signup.phoneNumber.$touched &&
+          !signup.phoneNumber.$error.required &&
+             signup.phoneNumber.$invalid">10 Digits: xxx-xxx-xxxx</span>
+    </span>
+
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    <span class="col-md-6 col-xs-12">Favorite Menu Item:  </span>
+    <span class="col-md-6 col-xs-12">
+      <input type="text" name="favoriteMenu" placeholder="Favorite Menu Number"
+      ng-model="ctrl.favoriteMenu"
+      required
+      maxlength="3"
+      >
+      <span ng-if="signup.favoriteMenu.$error.required
+          && signup.favoriteMenu.$touched">Favorite menu is required</span>
+    </span>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div>
+    <button id="submit" type="button" name="button"
+    ng-disabled="signup.firstname.$invalid ||
+    signup.lastname.$invalid ||
+    signup.email.$invalid ||
+    signup.phoneNumber.$invalid ||
+    signup.favoriteMenu.$invalid"
+    ng-click="ctrl.register()">Register</button>
+  </div>
+
+  <div ng-if="ctrl.isRegistered">
+    You information has been saved.
+  </div>
+
+  <div ng-if="ctrl.isMenuItemNotFound">
+    No such menu number exists.
+  </div>
+
+
+
+
+
+</form>
+</div>
