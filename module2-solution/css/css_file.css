@@ -1,0 +1,129 @@
+#chicken
+    {
+      background-color: pink;
+
+    }
+    #beef
+    {
+      background-color: red;
+      color: white;
+    }
+    #sushi
+    {
+      background-color: lightyellow;
+    }
+    *
+    {
+      box-sizing:border-box;
+    }
+    h1
+    {
+      text-align:center;
+      margin: 2%;
+    }
+    div.topic
+    {
+      font-size: 30px;
+      text-align:center;
+
+    }
+    .paragraph
+    {
+      clear:right;
+      padding: 20px;
+    }
+      @media (min-width:992px)
+      {
+
+
+          .res,.rest
+          {
+            width:32%;
+            border : 3px solid black;
+            background-color: silver;
+            margin : 10px;
+            float:left;
+            border-collapse: collapse;
+          }
+          .topic
+          {
+            position:relative;
+            top: 0px;
+            right: 0px;
+            height:40px;
+            width:40%;
+
+            border:2px solid black;
+            float:right;
+            border-collapse: collapse;
+          }
+
+      }
+      @media (max-width:767px)
+      {
+          .res,.rest
+          {
+            width:90%;
+            border : 3px solid black;
+            background-color: silver;
+            margin : 40px;
+
+          }
+          .topic
+          {
+            position:relative;
+            top: 0px;
+            right: 0px;
+            height:40px;
+            width:40%;
+            border:2px solid black;
+            float:right;
+            border-collapse: collapse;
+          }
+
+      }
+
+      @media (min-width:768px) and (max-width:991px)
+      {
+          .res
+          {
+            width:45%;
+            border : 3px solid black;
+            background-color: silver;
+            margin : 10px;
+            float:left;
+            border-collapse: collapse;
+          }
+          .rest
+          {
+            width:92.5%;
+            border : 3px solid black;
+            background-color: silver;
+            margin : 10px;
+            float:left;
+            border-collapse: collapse;
+          }
+          .topic
+          {
+            position:relative;
+            top: 0px;
+            right: 0px;
+            height:40px;
+            width:45%;
+            border:2px solid black;
+            float:right;
+            border-collapse: collapse;
+          }
+          div#sushi
+          {
+            position:relative;
+            top: 0px;
+            right: 0px;
+            height:40px;
+            width:18%;
+            border:2px solid black;
+            float:right;
+            border-collapse: collapse;
+          }
+      }
+
