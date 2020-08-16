@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+          <style media="screen">
+            *{
+    box-sizing: border-box;
+    font-weight: bold;
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: cursive;
+
+
+}
+p{
+   position: relative;
+   width: 110px;
+   margin: 0;
+   border: 2px solid black;
+   text-align: center;
+   font-size: 225%;
+}
+#p1{
+  background-color: pink;
+}
+#p2{
+    background-color: red;
+    color: #FFF;
+}
+#p3{
+    background-color: yellow;
+}
+section{
+  border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: gray;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    font-size: 75%;
+}
+
+/*large devices only*/
+@media (min-width:992px){
+    section{
+    width: 31%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    #sec1,#sec2{
+        width: 46%;
+    }
+    #sec3{
+        width: 96%;
+    }
+
+@media (max-width:767px){
+    #sec1,#sec2,#sec3{
+        width: 96%;
+    }
+
+}
+          </style>
+             <meta charset="UTF-8">
+             <meta http-equiv="X-UA-Compartible" content="IE=edge">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+
+        <body>
+          <h1>Our Menu</h1>
+
+          <section id="sec1">
+            <p id="p1">Chicken</p>lorem ipsum is simply text of the printing and typesetting industryb.
+        lorem ipsum has been the industry standard dummy text ever since the 1500s,
+        when an unknown printer took a gallery of type and scrambled it to make a type specimen book</section>
+
+          <section id="sec2">
+            <p id="p2">Beef</p>lorem ipsum is simply text of the printing and typesetting industryb.
+        lorem ipsum has been the industry standard dummy text ever since the 1500s,
+        when an unknown printer took a gallery of type and scrambled it to make a type specimen book</section>
+
+          <section id="sec3">
+            <p id="p3">Sushi</p>lorem ipsum is simply text of the printing and typesetting industryb.
+        lorem ipsum has been the industry standard dummy text ever since the 1500s,
+        when an unknown printer took a gallery of type and scrambled it to make a type specimen book</section>
+        </body>
+
+
+    </html>

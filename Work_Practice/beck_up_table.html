@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body
+  {
+    font: 15px/1 'Open Sans',Arial,Helvetica,sans-serif;
+  }
+.hovering button:hover
+{
+    background-color: green;
+  }
+.tab
+{
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+
+.tab button {
+  color: black;
+  background-color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+table
+{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+
+ }
+ th,td
+ {
+   border: 1px solid #ddd;
+
+ }
+.row{
+  height :40px;
+}
+.lbl
+{
+  background-Color:#636b75;
+  color:white;
+}
+
+.tab button:hover
+{
+  background-color: lightblue;
+}
+
+.tab button.active
+{
+  background-color: #ccc;
+  font-weight: bold;
+  color: red;
+
+}
+.tabcontent
+{
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'US')">US</button>
+    <button class="tablinks" onclick="openCity(event, 'UK')">UK</button>
+  </div>
+
+  <div id="US" class="tabcontent">
+
+  </div>
+  <div id="UK" class="tabcontent">
+
+  </div>
+
+  <table border="1px">
+    <tr class = "row">
+      <th class="ok" > Select </th>
+        <th colspan="2"> MEN </th>
+        <th colspan="2"> WOMEN </th>
+        <th colspan="1" ><button class="hovering" style="border: none;background-color: inherit; font-weight: bold;" onclick="inch()"> INCH </button></th>
+        <th colspan="1"><button class="hovering" style="border: none;background-color: inherit; font-weight: bold;" onclick="cm()"> CM </button></th>
+    </tr>
+    <tr class ="row">
+      <th class="ok" > Size </th>
+        <th class="lbl"> XS </th>
+        <th class="lbl"> S </th>
+        <th class="lbl"> M </th>
+        <th class="lbl"> L </th>
+        <th class="lbl"> XL </th>
+        <th class="lbl"> XXL </th>
+    </tr>
+  <tr class = "row">
+  <th class="ok" > BodyChest </th>
+  <td style="width:85.2px"  align="center" id="1">32-34</td>
+  <td style="width:75.2px" align="center" id="2">36-38</td>
+  <td style="width:75.2px" align="center" id="3">40-42</td>
+  <td style="width:75.2px" align="center" id="4">44-46</td>
+  <td style="width:76px" align="center" id="5">48-50</td>
+  <td style="width:77.6px" align="center" id="6">52-54</td>
+  </tr>
+  <tr class = "row">
+  <th class="ok" > JacketChest </th>
+  <td  align="center"id="7">38</td>
+  <td  align="center" id="8">40</td>
+  <td  align="center" id="9">44</td>
+  <td  align="center" id="10">48</td>
+  <td  align="center" id="11">52</td>
+  <td  align="center" id="12">56</td>
+  </tr>
+  <tr class = "row">
+  <th class="ok" > JacketSleeves </th>
+  <td  align="center" id="13">25</td>
+  <td  align="center" id="14">25.5</td>
+  <td  align="center" id="15">26.5</td>
+  <td  align="center" id="16">27</td>
+  <td  align="center" id="17">27.5</td>
+  <td  align="center" id="18">28</td>
+  </tr>
+  <tr class = "row">
+  <th class="ok" > JacketShoulders </th>
+  <td  align="center"id="19">17.5</td>
+  <td align="center"id="20">18</td>
+  <td style="width:75.2px" align="center" id="21">19</td>
+  <td style="width:75.2px" align="center" id="22">20</td>
+  <td style="width:76px" align="center" id="23">21</td>
+  <td style="width:77.6px" align="center" id="24">22</td>
+  </tr>
+  </table>
+<script>
+  function openCity(event, cityName)
+    {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++)
+    {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    event.currentTarget.className += " active";
+    }
+    function cm(){
+			document.getElementById('1').innerHTML="81-86";
+			document.getElementById('2').innerHTML="86-91";
+			document.getElementById('3').innerHTML="96-101";
+			document.getElementById('4').innerHTML="106-112";
+			document.getElementById('5').innerHTML="117-122";
+			document.getElementById('6').innerHTML="127-132";
+			document.getElementById('7').innerHTML="96.5";
+			document.getElementById('8').innerHTML="101.5";
+			document.getElementById('9').innerHTML="112";
+			document.getElementById('10').innerHTML="122";
+			document.getElementById('11').innerHTML="132";
+			document.getElementById('12').innerHTML="142";
+			document.getElementById('13').innerHTML="63.5";
+			document.getElementById('14').innerHTML="65";
+			document.getElementById('15').innerHTML="67";
+			document.getElementById('16').innerHTML="68.5";
+			document.getElementById('17').innerHTML="70";
+			document.getElementById('18').innerHTML="71";
+			document.getElementById('19').innerHTML="44.5";
+			document.getElementById('20').innerHTML="45.5";
+			document.getElementById('21').innerHTML="48.5";
+			document.getElementById('22').innerHTML="51";
+			document.getElementById('23').innerHTML="53.5";
+			document.getElementById('24').innerHTML="56";
+		}
+		function inch(){
+			document.getElementById('1').innerHTML="32-34";
+			document.getElementById('2').innerHTML="36-38";
+			document.getElementById('3').innerHTML="40-42";
+			document.getElementById('4').innerHTML="44-46";
+			document.getElementById('5').innerHTML="48-50";
+			document.getElementById('6').innerHTML="52-54";
+			document.getElementById('7').innerHTML="38";
+			document.getElementById('8').innerHTML="40";
+			document.getElementById('9').innerHTML="44";
+			document.getElementById('10').innerHTML="48";
+			document.getElementById('11').innerHTML="52";
+			document.getElementById('12').innerHTML="56";
+			document.getElementById('13').innerHTML="25";
+			document.getElementById('14').innerHTML="25.5";
+			document.getElementById('15').innerHTML="26.5";
+			document.getElementById('16').innerHTML="27";
+			document.getElementById('17').innerHTML="27.5";
+			document.getElementById('18').innerHTML="28";
+			document.getElementById('19').innerHTML="17.5";
+			document.getElementById('20').innerHTML="18";
+			document.getElementById('21').innerHTML="19";
+			document.getElementById('22').innerHTML="20";
+			document.getElementById('23').innerHTML="21";
+			document.getElementById('24').innerHTML="22";
+    }
+  </script>
+</body>
+</html>

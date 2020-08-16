@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIMPLE CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<h1>Simple Calculator</h1>
+		<form id="calform" name="cal">
+			<input name="display" style="width: 675px; height: 100px; text-align: center; background-color: #1f80c9">
+			</br>
+			<input type="button" name="" value="0" onclick="cal.display.value+='0'">
+			<input type="button" name="" value="1"onclick="cal.display.value+='1'">
+			<input type="button" name="" value="2"onclick="cal.display.value+='2'">
+			<input type="button" name="" value="+"onclick="cal.display.value+='+'" style="background-color: #cc5c11">
+			</br>
+			</br>
+
+			<input type="button" name="" value="3"onclick="cal.display.value+='3'">
+			<input type="button" name="" value="4"onclick="cal.display.value+='4'">
+			<input type="button" name="" value="5"onclick="cal.display.value+='5'">
+			<input type="button" name="-" value="-"onclick="cal.display.value+='-'" style="background-color: #ba55d3">
+			</br>
+			</br>
+
+			<input type="button" name="" value="6"onclick="cal.display.value+='6'">
+			<input type="button" name="" value="7"onclick="cal.display.value+='7'">
+			<input type="button" name="" value="8"onclick="cal.display.value+='8'">
+			<input type="button" name="" value="x"onclick="cal.display.value+='x'" style="background-color: #7db1b2">
+			</br>
+
+			</br>
+			<input type="button" name="" value="9"onclick="cal.display.value+='9'">
+			<input type="button" name="" value="C"	onclick="cal.display.value=''">
+			<input type="button" name="" value="=" onclick="cal.display.value = eval(cal.display.value)" style="background-color: #21ACD9 ">
+
+			<input type="button" name="" value="&#247" onclick="cal.display.value+='/'" style="background-color: #cc0000">
+			</br>
+
+
+
+
+		</form>
+
+	</body>
+</html>

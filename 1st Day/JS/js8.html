@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning JS</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1 id="heading">Learning JS</h1>
+			<p>With Haseeb </p>
+		</div>
+		<div class="container">
+		<button onclick="changeText(this)">Click Me</button>	
+		</div>
+			<script >				
+				function changeText() {
+				var heading = document.getElementById('heading');
+				heading.innerHTML = 'You Cliked'		
+							}
+				
+			</script>
+	</body>
+</html>

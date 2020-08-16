@@ -1,0 +1,47 @@
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ */
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+
+
+body { font-size: 14px; font-family: Arial, Verdana, sans-serif; }
+section, div, article, aside, header .strap { float: left; width:100%; }
+nav, #searchform, .flexslider, footer .right, footer .credit, footer ul, .sidebar, .navigation, #respond, .contact-form, section.footer { display:none; }
+h1 { font-size: 200%; margin-bottom: 0; }
+h2 { font-size: 180%; }
+h3 { font-size: 160%;}
+h4 { font-size: 140%; }
+h5 { font-size: 120%; }
+h6 { font-size: 110%; }
+footer { padding-top: 10px; border-top: 1px solid #ccc; }
+header { padding: 20px 0; }
+.home .portfolio article { width: 50%; float: left; }
+.portfolio a[href]:after, header a[href]:after, .archive a[href]:after { content: ""; }
+
+.one_half{ width:48%; }
+.one_third{ width:30.66%; }
+.two_third{ width:65.33%; }
+.one_fourth{ width:22%; }
+.three_fourth{ width:74%; }
+.one_fifth{ width:16.8%; }
+.two_fifth{ width:37.6%; }
+.three_fifth{ width:58.4%; }
+.four_fifth{ width:67.2%; }
+.one_sixth{ width:13.33%; }
+.five_sixth{ width:82.67%; }
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:4%; float:left; }
+.last{ margin-right:0 !important; clear:right; }
+.clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
