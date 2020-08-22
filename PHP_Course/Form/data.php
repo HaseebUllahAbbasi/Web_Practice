@@ -16,7 +16,7 @@ include 'header.php';
      {
        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
        border-collapse: collapse;
-       width: 100%;
+       width: 20%;
      }
   table td, table th
   {
