@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Itsy Website
+https://haseebullahabbasi.github.io/Web_Practice/itsy/
 
-You can use the [editor on GitHub](https://github.com/HaseebUllahAbbasi/coursera_test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## JS Crash
+https://haseebullahabbasi.github.io/Web_Practice/1st%20Day/CrashJS
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Couresra Assignment
+https://haseebullahabbasi.github.io/Web_Practice/Coursera/assignment_5
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Couresra Assignment
+https://haseebullahabbasi.github.io/Web_Practice/Coursera/module3-solution
 
-# Header 1
-## Header 2
-### Header 3
+## Couresra Assignment
+https://haseebullahabbasi.github.io/Web_Practice/1st%20Day/Html/index.html
 
-- Bulleted
-- List
+## Bootstrap
+https://haseebullahabbasi.github.io/Web_Practice/bootstrap-3.3.7-dist
 
-1. Numbered
-2. List
+## template
+https://haseebullahabbasi.github.io/Web_Practice/template_1
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HaseebUllahAbbasi/coursera_test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
