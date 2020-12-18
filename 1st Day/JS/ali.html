@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head >
+		<title>JS Work.</title>
+	</head>
+	
+	<body>
+
+	<script type="text/javascript">
+	document.write("<br>task  1 <br>");
+		var myCar = {
+    make: 'Ford',
+    model: 'Mustang',
+	color : 'blue',
+	year: 1969,
+		full_info : function() {
+    return this.make + " " + this.model+" "+this.year+ " "+this.color;
+  }
+};
+
+document.write("<br>task  2 <br>");
+	
+
+function Person(first, last, age, eye) 
+{
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+document.write(myCar.full_info());
+function Person(firstName,lastName,age,eyeColor) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  this.eyeColor = eyeColor;
+  this.changeName = function (name) {
+    this.lastName = name;
+  }
+}
+// Create a Person object
+var myMother = new Person("Sally","Rally",48,"green");
+myMother.changeName("Doe");
+document.write("</br>My mother's last name is " + myMother.lastName);
+
+
+
+var new_obj = new Person("new","ok ",43,"black");
+new_obj.changeName("temp");
+document.write("</br> last name is " + new_obj.lastName);
+
+var new_obj_1 = new Person("frist_name","last_name",41,"pink");
+new_obj_1.changeName("this");
+document.write("</br> last name is " + new_obj_1.lastName);
+
+var new_obj_2 = new Person("document","new",28,"yellow");
+new_obj_2.changeName("does");
+document.write("</br> name is " + new_obj_2.lastName);
+
+
+document.write("<br>task  3 <br>");
+	
+
+class Car 
+{
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age(x) {
+    return x - this.year;
+  }
+}
+
+let date = new Date();
+let year = date.getFullYear();
+
+let new_car = new Car("Ford", 2014);
+document.write(
+"My car is " + new_car.age(year) + " years old."
+);
+
+	</script>
+	</body>
+</html>
