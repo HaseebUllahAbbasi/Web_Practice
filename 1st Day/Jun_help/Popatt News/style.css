@@ -1,0 +1,125 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    color: white;
+    background-color: #000000;
+}
+/* 
+#container {
+    position: relative;
+} */
+
+#header {
+    padding-top: -25px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.05em; 
+    font-size: 23px;
+    text-align: center;    
+    color: #F7DC6F;
+    padding: 5px;
+}
+
+ul li {
+    font-family: 'Poppins', sans-serif;
+    /* letter-spacing: 0.08em; */
+    display: inline;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 1px 12px;
+    border-radius: 30px;
+}
+
+li a:hover  {
+    border: 2px solid #F7DC6F;
+}
+
+#menu-outer {
+    height: 25px;
+    padding: 4px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+    padding-top: 0;
+    margin-top: 0px;
+	}
+	ul#horizontal-list li {
+        display: inline;
+        padding-right: 10px;
+        padding-left: 20px;
+        
+    }
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.text-block {
+    position: absolute;
+    /* bottom: 170px; */
+    /* right: 200px; */
+    background-color: white;
+    color: black;
+    /* padding-right: 710px; */
+    transform: translate(276px, -63px);
+    font-family: 'Poppins', cursive;
+    letter-spacing: -0.1em;
+}
+
+.underline {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover h1 {
+    border-bottom: 5px solid turquoise;
+}
+
+.brief {
+    transform: translate(14px, -475px);
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+.happenLive {
+    transform: translate(15px, -475px);
+    font-size: 20px;
+    font-family: 'Poppins', cursive; 
+    color: #F7DC6F;   
+}
+
+#hapLive {
+    text-decoration: none;
+}
+
+a:hover span{
+    
+    position: absolute;
+    border-bottom: 1px dotted hotpink;
+    
+}
+a span{
+    position: absolute;
+}
+
+/* 
+#rightHand {
+    transform: translate(15px, -450px);
+} */
