@@ -1,0 +1,24 @@
+<!--
+Input using the simple technique :
+<h2>This is h2 new tag of the post create component</h2>
+<textarea  rows="6" cols="80" [value]="new_post" #input_text></textarea>
+<hr>
+<button (click)="onAddPost(input_text)" >Save Post</button>
+<p>{{new_post}}</p>
+
+-->
+
+<!-- input using the ng module-->
+
+<h2>This is h2 new tag of the post create component</h2>
+<mat-card>
+  <mat-form-field>
+    <textarea matInput  rows ="5" [(ngModel)]="entered_value" ></textarea>
+  </mat-form-field>
+  <button  mat-raised-button color="primary" (click)="onAddPost()" >Save Post</button>
+</mat-card>
+
+
+
+<!-- String Binding-->
+<p>{{new_post}}</p>
