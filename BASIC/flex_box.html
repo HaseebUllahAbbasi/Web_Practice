@@ -2,10 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Flex Crash</title>
+  <style>
+    .container_1
+    {
+      display: flex ;
+      
+      /*
+      align-items: flex-start;
+      align-items: flex-end;
+      align-items: center;
+      */
+/*
+default
+     flex-direction: row;
+  
+    flex-direction: column;
+      
+*/   
+      
+    }
+    .container_1 div,.container_2 div 
+    {
+      margin: 0.5em;
+      padding: 0.5em;
+      background-color: lightcoral;
+      border: 1px  blue solid;
 
+    }
+    .box_1
+    {
+      flex: 2;
+      order: 2;
+    }
+    .box_2
+    {
+
+      flex: 1;
+      
+      order: 1;
+    }
+    .box_3
+    {
+
+
+      order: 3;
+      flex: 1;
+    }
+    .box_11
+    {
+      /*
+      width: 30%;
+      */
+      flex-basis: 30%;
+    }
+    .container_2
+    {
+      
+      display:flex;
+      /*
+      
+      justify-content: flex-start;
+      */
+      
+      justify-content: space-between;
+    }
+
+
+
+  </style>
 </head>
 <body>
+  <div class="container_1">
+    <div class="box_1">
+      <h1>Box 1</h1>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus necessitatibus veniam totam obcaecati nostrum, voluptates magni. Pariatur temporibus sunt tempore praesentium, dolores cumque! Eos sed eligendi porro incidunt commodi!
+       </p>
+    </div>
+    <div class="box_2">
+      <h1>Box 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus necessitatibus veniam totam obcaecati nostrum, voluptates magni. Pariatur temporibus sunt tempore praesentium, dolores cumque! Eos sed eligendi porro incidunt commodi!
+       </p>      
+    </div>
+    <div class="box_3">
+      <h1>Box 3</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus necessitatibus veniam totam obcaecati nostrum, voluptates magni. Pariatur temporibus sunt tempore praesentium, dolores cumque! Eos sed eligendi porro incidunt commodi!
+       </p>
+    </div>
+    
+  </div>
+  <div class="container_2">
+    <div class="box_11">
+      <h1>Box 3</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus necessitatibus veniam totam obcaecati nostrum, voluptates magni. Pariatur temporibus sunt tempore praesentium, dolores cumque! Eos sed eligendi porro incidunt commodi!
+       </p>
+    </div>
+    <div class="box_11">
+      <h1>Box 3</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus necessitatibus veniam totam obcaecati nostrum, voluptates magni. Pariatur temporibus sunt tempore praesentium, dolores cumque! Eos sed eligendi porro incidunt commodi!
+       </p>
+    </div>
+    <div class="box_11">
+      <h1>Box 3</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus necessitatibus veniam totam obcaecati nostrum, voluptates magni. Pariatur temporibus sunt tempore praesentium, dolores cumque! Eos sed eligendi porro incidunt commodi!
+       </p>
+    </div>
+  </div>
 
 </body>
 </html>
