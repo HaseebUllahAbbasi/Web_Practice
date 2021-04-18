@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<script async="" src="./Doughnut Chart_files/analytics.js.download"></script>
+<script
+	data-dapp-detection="">!function () { let e = !1; function n() { if (!e) { const n = document.createElement("meta"); n.name = "dapp-detected", document.head.appendChild(n), e = !0 } } if (window.hasOwnProperty("ethereum")) { if (window.__disableDappDetectionInsertion = !0, void 0 === window.ethereum) return; n() } else { var t = window.ethereum; Object.defineProperty(window, "ethereum", { configurable: !0, enumerable: !1, set: function (e) { window.__disableDappDetectionInsertion || n(), t = e }, get: function () { if (!window.__disableDappDetectionInsertion) { const e = arguments.callee; e && e.caller && e.caller.toString && -1 !== e.caller.toString().indexOf("getOwnPropertyNames") || n() } return t } }) } }();</script>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Doughnut Chart</title>
+	<script src="./Doughnut Chart_files/Chart.min.js.download"></script>
+	<script src="./Doughnut Chart_files/utils.js.download"></script>
+	<style>
+		.custom
+		{
+				background-color: #f7f2ed;
+			
+			}
+			
+		.custom_2 *
+		{
+			display: inline-block;
+		}
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+	<style type="text/css">
+		/* Chart.js */
+		@keyframes chartjs-render-animation {
+			from {
+				opacity: .99
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		.chartjs-render-monitor {
+			animation: chartjs-render-animation 1ms
+		}
+
+		.chartjs-size-monitor,
+		.chartjs-size-monitor-expand,
+		.chartjs-size-monitor-shrink {
+			position: absolute;
+			direction: ltr;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			pointer-events: all;
+			visibility: visible;
+			z-index: -1
+		}
+
+		.chartjs-size-monitor-expand>div {
+			position: absolute;
+			width: 1000000px;
+			height: 1000000px;
+			left: 0;
+			top: 0
+		}
+
+		.chartjs-size-monitor-shrink>div {
+			position: absolute;
+			width: 200%;
+			height: 200%;
+			left: 0;
+			top: 0;
+			
+			
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div id="canvas-holder" style="width:40%">
+		<div class="chartjs-size-monitor">
+			<div class="chartjs-size-monitor-expand">
+				<div class=""></div>
+			</div>
+			<div class="chartjs-size-monitor-shrink">
+				<div class=""></div>
+			</div>
+		</div>
+		<div class="custom">
+			<canvas id="chart-area" 
+			class="chartjs-render-monitor">
+		</canvas>
+			<div class="custom_2">
+				<h5 class="" style="width: 90%;">Calories</h5>
+				<span>20</span>
+			</div>
+			<div class="custom_2">
+				<h5 class="" style="width: 90%;">Calories</h5>
+				<span>20</span>
+			</div>
+			<div class="custom_2">
+				<h5 class="" style="width: 90%;">Calories</h5>
+				<span>20</span>
+			</div>
+			<div class="custom_2">
+				<h5 class="" style="width: 90%;">Calories</h5>
+				<span>20</span>
+			</div>
+			
+		</div>
+		
+	</div>
+	<script>
+		var randomScalingFactor = function () {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+					],
+					backgroundColor: [
+						'rgb(195, 180, 166)',
+						'rgb(120, 98, 89)',
+						window.chartColors.yellow,
+						window.chartColors.green,
+					]
+					,
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Red',
+					'Orange',
+					'Yellow',
+					'Green'
+				]
+			},
+			options: {
+				responsive: true,
+				legend: {
+					position: 'bottom',
+				},
+				title: {
+					display: true,
+					text: 'Your Item'
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				},
+				cutoutPercentage:50,
+			}
+		};
+
+		window.onload = function () {
+			var ctx = document.getElementById('chart-area').getContext('2d');
+			window.myDoughnut = new Chart(ctx, config);
+		};
+
+	</script>
+
+
+
+</body>
+
+</html>

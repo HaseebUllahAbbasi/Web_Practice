@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <style>
+
+    </style>
+<head>
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	theme: "light",
+//	exportFileName: "Doughnut Chart",
+//	exportEnabled: true,
+	animationEnabled: true,
+	title:{
+		text: "Monthly Expense"
+	},
+	legend:{
+		cursor: "pointer",
+		itemclick: explodePie
+	},
+	data: [{
+		type: "doughnut",
+		innerRadius: 60,
+		showInLegend: true, 
+		toolTipContent: "<b>{name}</b>: ${y} (#percent%)",
+		indexLabel: "{name} - #percent%",
+		dataPoints: [
+			{ y: 450, name: "Food" },
+			{ y: 120, name: "Insurance" },
+			{ y: 300, name: "Travelling" },
+			{ y: 800, name: "Housing" },
+			{ y: 150, name: "Education" },
+			{ y: 150, name: "Shopping"},
+		]
+	}]
+});
+chart.render();
+
+function explodePie (e) {
+	if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+	} else {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+	}
+	e.chart.render();
+}
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;">
+</div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
