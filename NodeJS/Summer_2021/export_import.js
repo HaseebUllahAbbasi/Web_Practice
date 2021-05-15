@@ -1,0 +1,4 @@
+/*
+Export  is done using the module.exports then pass the method and  constant 
+import is done using the require in a variable
+*/
