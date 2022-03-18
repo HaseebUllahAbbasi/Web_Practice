@@ -7,5 +7,6 @@ module.exports =
     sayHola : function()
     {
         return "hola Messi ";
-    }
+    },
+    best_player: "messi"
 };

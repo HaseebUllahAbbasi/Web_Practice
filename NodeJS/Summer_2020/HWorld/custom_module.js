@@ -1,2 +1,2 @@
-var object = require('./file_content.js');
-console.log(object.sayHI());
+var object = require('./content2');
+console.log(object.best_player);

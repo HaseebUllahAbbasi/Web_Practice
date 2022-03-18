@@ -1,6 +1,5 @@
 var  time = 0;
-var timer =setInterval(function()
-{
+var timer =setInterval(function(){
     time+=1;
     console.log("the time passed : "+time);
     if(time>5)
@@ -9,9 +8,8 @@ var timer =setInterval(function()
     console.log(__dirname);
     console.log(__filename);
 
-        clearInterval(timer);
+        clearInterval(timer);}
     }
-}
 ,100);
 
 /*

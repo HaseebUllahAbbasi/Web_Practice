@@ -1,6 +1,6 @@
 /*
 Node web framework ::
-t provides mechanisms to:
+it provides mechanisms to:
 
     Write handlers for requests with different HTTP verbs at different URL paths (routes).
 

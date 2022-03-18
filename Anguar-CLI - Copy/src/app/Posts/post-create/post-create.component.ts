@@ -17,5 +17,6 @@ export class PostCreateComponent {
   // tslint:disable-next-line:typedef
   onAddPost() {
     this.new_post = this.entered_value;
+
   }
 }

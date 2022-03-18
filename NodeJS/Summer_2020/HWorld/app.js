@@ -10,7 +10,12 @@ http.createServer(func)
 */
 http.createServer(function (req,res)
 {
+    if(req.url=="/")
     res.end("Hi There");
-}).listen(3000);
+    else if(req.url=="/home")
+    res.end("Hi There home ");
+    else res.end('404')
+    
+}).listen(3001);
 
 console.log("the server is running");
