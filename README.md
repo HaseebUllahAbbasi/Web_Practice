@@ -4,6 +4,8 @@
 
 ### [Assignment_1](https://haseebullahabbasi.github.io/Web_Practice/Coursera/assignment_5)
 
+### [Bootstrap Sheet](https://haseebullahabbasi.github.io/Web_Practice/BootStrap_Example/bootstrap-5.0.0-beta1-examples/cheatsheet)
+
 ### [Assignment](https://haseebullahabbasi.github.io/Web_Practice/Coursera/module3-solution)
 ### [Fun](https://haseebullahabbasi.github.io/Web_Practice/Fun/)
 
